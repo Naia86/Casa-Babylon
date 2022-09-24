@@ -1,0 +1,101 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+a {
+    text-decoration: none;
+    color: black;
+}
+
+@font-face {
+    font-family: Reglisse;
+    src: url(./TIPOGRAFIA/Reglisse.otf);
+}
+
+.titulo {
+    font-family: Reglisse;
+}
+
+@font-face {
+    font-family: Reglisse_Fill;
+    src: url(./TIPOGRAFIA/Reglisse_Fill.otf);
+}
+
+.text {
+    font-family: Reglisse_Fill;
+}
+
+.header {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-wrap: wrap;
+    background-color: rgb(255, 119, 0);
+    width: 100%;
+    height: 5vh;
+}
+
+.titulo {
+        color: #105D33;
+        font-size: 2em;
+        font-weight: 10;
+}
+
+.list-nav {
+    list-style: none;
+    display: flex;
+    gap: 100px;
+    font-size: 1.5em;
+    float: left;
+}
+
+.body {
+    background-color: black;
+}
+
+.registro {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.text {
+    width: 100%;
+    text-align: center;
+    font-weight: 400;
+    color: #07C607;
+    font-size: 2.5em;
+    padding: 50px;
+}
+
+.contactform {
+    width: 80%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 30px;
+    gap: 10px;
+}
+
+.contactform input {
+    width: 300px;
+    height: 50px;
+    text-align: center;
+    border-radius: 20px;
+    background-color: #FFDD00;
+    border: 3px solid #008036;
+}
+
+.contactform button {
+    width: 300px;
+    height: 30px;
+    border-radius: 20px;
+    background-color: #FFDD00;
+    border: 3px solid #008036;
+    cursor: pointer;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-weight: 500;
+}
