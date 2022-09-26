@@ -360,7 +360,7 @@ a {
 
 @media (max-width: 1024px) {
     .header {
-        width: 320px;
+        width: 380px;
         justify-items: center;
     }
 }
@@ -376,14 +376,14 @@ a {
 
 @media (max-width: 1024px) {
     .contenedor-portada {
-        width: 320px;
+        width: 380px;
         height: 200px;
     }
 }
 
 @media (max-width: 1024px) {
     .wave {
-        width: 320px;
+        width: 380px;
         top: 90px;
     }
 }
@@ -427,7 +427,7 @@ a {
         display: grid;
         grid-template-columns: 50px 50px;
         grid-template-rows: 2fr 2fr;
-        gap: 0.5px 80px;
+        gap: 0.8px 80px;
     }
 }
 
@@ -507,7 +507,7 @@ a {
 
 @media (max-width: 1024px) {
     .contacto {
-        width: 320px;
+        width: 380px;
         height: 200px;
     }
 }
@@ -549,7 +549,7 @@ a {
 
 @media (max-width: 1024px) {
     .footer {
-        width: 320px;
+        width: 380px;
         justify-items: center;
         height: 20px;
         justify-content: center;
