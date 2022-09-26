@@ -360,7 +360,7 @@ a {
 
 @media (max-width: 1024px) {
     .header {
-        width: 380px;
+        width: 400px;
         justify-items: center;
     }
 }
@@ -376,14 +376,14 @@ a {
 
 @media (max-width: 1024px) {
     .contenedor-portada {
-        width: 380px;
+        width: 400px;
         height: 200px;
     }
 }
 
 @media (max-width: 1024px) {
     .wave {
-        width: 380px;
+        width: 400px;
         top: 90px;
     }
 }
@@ -507,7 +507,7 @@ a {
 
 @media (max-width: 1024px) {
     .contacto {
-        width: 380px;
+        width: 400px;
         height: 200px;
     }
 }
@@ -549,7 +549,7 @@ a {
 
 @media (max-width: 1024px) {
     .footer {
-        width: 380px;
+        width: 400px;
         justify-items: center;
         height: 20px;
         justify-content: center;
