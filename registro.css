@@ -111,7 +111,7 @@ a {
     .list-nav {
         width: 20px;
         justify-content: center;
-        font-size: 0.8em;
+        font-size: 1.5em;
         gap: 15px;
     }
 }

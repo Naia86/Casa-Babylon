@@ -54,35 +54,40 @@ a {
 
 .header {
     display: flex;
-    justify-content: center;
+    justify-content: space-between;
     align-items: center;
-    flex-wrap: wrap;
     background-color: rgb(255, 119, 0);
-    width: 100%;
-    height: 5vh;
+    padding: 2rem;
 }
 
-.list-nav {
+.logoHeader {
+    max-width: 5rem;
+}
+
+.nav-list {
     list-style: none;
     display: flex;
     gap: 100px;
     font-size: 1.5em;
     float: left;
 }
+.abrir-menu,
+.cerrar-menu {
+    display: none;
+}
+
+
 
 .body {
     background-color: rgb(8, 8, 8);
 }
 
-.contenedor {
+.contenedor-portada {
     display: flex;
-    justify-content: space-around;
-    align-items: center;
-    flex-wrap: wrap;
+    justify-content: center;
     width: 100%;
-    padding: 30px 0 30px 0;
+    height: 800px;
     flex-direction: column;
-    gap: 10px;
 }
 
 .titulo {
@@ -102,42 +107,20 @@ a {
 
 }
 
-.titulo2 {
+.logo {
     display: flex;
-    justify-content: center;
+    justify-content: right;
+    height: 500px;
+    padding: 100px 0px 0px 550px;
+}
+
+.titulo2 {
     color: black;
     font-size: 5em;
     font-weight: 50;
     text-shadow: 0px 3px 2px rgba(7, 198, 7);
-}
-
-.contenedor-portada {
     display: flex;
-    width: 100%;
-    height: 750px;
-    flex-direction: column;
-    background-image: url(./imagenes/portada.png);
-    background-repeat: no-repeat;
-    background-size: cover;
-}
-
-.circulo {
-    display: flex;
-    width: 25%;
-    border-radius: 80px;
-    position: absolute;
-    left: 550px;
-    top: 300px;
-    box-shadow: 0px -1px 13px 8px rgba(181,153,153,0.75);
-    -webkit-box-shadow: 0px -1px 13px 8px rgba(181,153,153,0.75);
-    -moz-box-shadow: 0px -1px 13px 8px rgba(181,153,153,0.75);
-}
-
-.wave {
-    display: flex;
-    position: absolute;
-    top: 658px;
-    width: 100%;
+    justify-content: center;
 }
 
 .destacados {
@@ -338,30 +321,107 @@ a {
     font-weight: 500;
 }
 
-.logocontact {
-    display: flex;
-    width: 15%;
-    height: 300px;
-}
 
-.footer {
-    display: flex;
-    justify-content: space-around;
-    align-items: center;
+.pie-pagina{
     width: 100%;
-    height: 50px;
-    background-color: #FF7700;
-    margin-top: 50px;
+    background-color:rgb(255, 119, 0);
 }
 
-.titulo4 {
-    font-size: 2em;
+.pie-pagina .grupo-1{
+    width: 100%;
+    max-width: 1200px;
+    margin: auto;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 90px;
+    padding: 10px 0px;
+}
+.pie-pagina .grupo-1 .box figure{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.pie-pagina .grupo-1 .box figure img{
+    width: 130px;
+}
+.pie-pagina .grupo-1 .box h2{
+    margin-bottom: 25px;
+    font-size: 20px;
+}
+.pie-pagina .grupo-1 .box p{
+    margin-bottom: 10px;
+}
+.pie-pagina .grupo-1 .red-social a{
+    display: inline-block;
+    width: 45px;
+    height: 45px;
+    margin-right: 10px;
+    color: #000C14;
+    background-color: transparent;
+    text-align: center;
+    transition: all 300ms ease;
+    cursor: pointer;
+}
+.pie-pagina .grupo-1 .red-social a:hover{
+    color: aqua;
+}
+.pie-pagina .grupo-2{
+    background-color: black;
+    padding: 15px 10px;
+    text-align: center;
+    color: #fff;
+}
+.pie-pagina .grupo-2 small{
+    font-size: 15px;
 }
 
-@media (max-width: 1024px) {
-    .header {
-        width: 400px;
-        justify-items: center;
+
+
+
+@media screen and (max-width: 800px) {
+    .abrir-menu,
+    .cerrar-menu {
+        display: block;
+        border: 0;
+        font-size: 2rem;
+        background-color: transparent;
+        cursor: pointer;
+    }
+
+    .abrir-menu {
+        color: black;
+    }
+
+    .nav {
+        opacity: 0;
+        visibility: hidden;
+        display: flex;
+        flex-direction: column;
+        align-items: end;
+        gap: 1rem;
+        position: absolute;
+        top: 0;
+        right: 0;
+        bottom: 0;
+        background-color: rgb(255, 119, 0);
+        padding: 2rem;
+        box-shadow: 0 0 0 100vmax rgba(0, 0, 0, .5);
+    }
+
+    .nav.visible {
+        opacity: 1;
+        visibility: visible;
+    }
+
+    .nav-list {
+        flex-direction: column;
+        align-items: end;
+    }
+
+    .nav-list li a {
+        color: black;
     }
 }
 
@@ -369,22 +429,22 @@ a {
     .list-nav {
         width: 18px;
         justify-content: center;
-        font-size: 0.6em;
+        font-size: 1.2em;
         gap: 15px;
     }
 }
 
 @media (max-width: 1024px) {
     .contenedor-portada {
-        width: 400px;
-        height: 200px;
+        width: 68vh;
+        height: 500px;
     }
 }
 
 @media (max-width: 1024px) {
     .wave {
-        width: 400px;
-        top: 90px;
+        width: 68vh;
+        top: 430px;
     }
 }
 
@@ -399,7 +459,7 @@ a {
 
 @media (max-width: 1024px) {
     .titulo {
-        font-size: 2em;
+        font-size: 3em;
         justify-content: center;
         font-weight: 25;
     }
@@ -505,21 +565,21 @@ a {
     }
 }
 
-@media (max-width: 1024px) {
+@media screen and (max-width: 800px) {
     .contacto {
         width: 400px;
         height: 200px;
     }
 }
 
-@media (max-width: 1024px) {
+@media screen and (max-width: 800px) {
     .logocontact {
         width: 40%;
         height: 60%;
     }
 }
 
-@media (max-width: 1024px) {
+@media screen and (max-width: 800px) {
     .contactform {
         width: 10px;
         align-items: flex-end;
@@ -527,41 +587,35 @@ a {
     }
 }
 
-@media (max-width: 1024px) {
+@media screen and (max-width: 800px) {
     .contactform input {
         width: 100px;
     }
 }
 
-@media (max-width: 1024px) {
+@media screen and (max-width: 800px) {
     .contactform textarea {
         width: 100px;
         height: 50px;
     }
 }
 
-@media (max-width: 1024px) {
+@media screen and (max-width: 800px) {
     .contactform button {
         width: 100px;
         height: 50px;
     }
 }
 
-@media (max-width: 1024px) {
-    .footer {
-        width: 400px;
-        justify-items: center;
-        height: 20px;
-        justify-content: center;
-        gap: 100px;
+@media screen and (max-width:800px){
+    .pie-pagina .grupo-1{
+        width: 90%;
+        grid-template-columns: repeat(1, 1fr);
+        grid-gap:30px;
+        padding: 35px 0px;
     }
 }
 
-@media (max-width: 1024px) {
-    .titulo4 {
-        font-size: 0.5em;
-    }
-}
 
 
 
