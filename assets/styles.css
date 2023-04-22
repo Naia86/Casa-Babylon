@@ -11,7 +11,7 @@ a {
 
 @font-face {
     font-family: Reglisse_Fill;
-    src: url(./TIPOGRAFIA/Reglisse_Fill.otf);
+    src: url(../TIPOGRAFIA/Reglisse_Fill.otf);
 }
 
 .list-nav {
@@ -32,7 +32,7 @@ a {
 
 @font-face {
     font-family: Reglisse;
-    src: url(./TIPOGRAFIA/Reglisse.otf);
+    src: url(../TIPOGRAFIA/Reglisse.otf);
 }
 
 .titulo2 {
@@ -45,7 +45,7 @@ a {
 
 @font-face {
     font-family: Reglisse_Back;
-    src: url(./TIPOGRAFIA/Reglisse_Back.otf);
+    src: url(../TIPOGRAFIA/Reglisse_Back.otf);
 }
 
 .titulo {
@@ -75,8 +75,6 @@ a {
 .cerrar-menu {
     display: none;
 }
-
-
 
 .body {
     background-color: rgb(8, 8, 8);
@@ -130,38 +128,34 @@ a {
     gap: 1rem;
 }
 
-.card {
-    width: 100%;
-    margin: 20px;
+.producto-img {
+    width: 90%;
+    height: 90%;
     border-radius: 1rem;
-    box-shadow: 0px 1px 10px rgba(0, 0, 0, 0.2);
-    margin-top: 50px;
-    text-align: center;
-    transition: all 400ms ease;
-    cursor: default;
-    background: #07C607;
 }
 
-.card:hover {
-    box-shadow: 5px 5px 20px rgba(0, 0, 0, 0.2);
-    transform: translateY(-3%);
-}
-
-.card img{
-    width: 100%;
-    height: 280px;
+.producto-detalles {
+    width: 90%;
+    background-color: #008036;
+    color: antiquewhite;
+    padding: .5rem;
     border-radius: 1rem;
+    margin-top: -2rem;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    gap: .5rem;
 }
 
 .producto-ver {
     border: 0;
-    background-color: antiquewhite;
-    color: #000C14;
+    background-color: #e4ebe7;
+    color: #008036;
     padding: .5rem;
     text-transform: uppercase;
     border-radius: 1rem;
     cursor: pointer;
-    border: 2px solid burlywood;
+    border: 2px solid rgb(228, 223, 215);
     transition: background-color .2s, color .2s;
 }
 
