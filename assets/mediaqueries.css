@@ -1,0 +1,236 @@
+@media screen and (max-width: 800px) {
+    .abrir-menu,
+    .cerrar-menu {
+        display: block;
+        border: 0;
+        font-size: 2rem;
+        background-color: transparent;
+        cursor: pointer;
+    }
+
+    .abrir-menu {
+        color: black;
+    }
+
+    .nav {
+        opacity: 0;
+        visibility: hidden;
+        display: flex;
+        flex-direction: column;
+        align-items: end;
+        gap: 1rem;
+        position: absolute;
+        top: 0;
+        right: 0;
+        background-color: rgb(255, 119, 0);
+        padding: 2rem;
+        box-shadow: 0 0 0 100vmax rgba(0, 0, 0, .5);
+    }
+
+    .nav.visible {
+        opacity: 1;
+        visibility: visible;
+    }
+
+    .nav-list {
+        flex-direction: column;
+    }
+
+    .nav-list li a {
+        color: black;
+    }
+}
+
+@media screen and (max-width: 800px) {
+    .titulo-principal {
+        align-content: center;
+        margin-top: 5%;
+    }
+    .logo {
+        width: 90 90vh;
+        height: 500px;
+        flex-direction: row;
+        margin-left: -45%;
+    }    
+}
+
+
+@media screen and (max-width: 800px) {
+    .titulo {
+        font-size: 3em;
+        justify-content: center;
+        font-weight: 25;
+    }
+}
+
+@media screen and (max-width: 800px) {
+    .subtitulo {
+        font-size: 1em;
+        justify-content: center;
+        font-weight: 15;
+    }
+}
+
+@media screen and (max-width: 800px) {
+    .titulo2 {
+        font-size: 3em;
+        justify-content: center;
+        font-weight: 25;
+    }
+
+    .contenedor-destacados {
+        display: grid;
+        grid-template-columns: 50vh 50vh;
+        grid-template-rows: 2fr 2fr;
+        gap: 4rem;
+        margin-left: 3rem;
+        margin-top: 1rem;
+    }
+}
+
+
+@media screen and (max-width: 800px) {
+    .card {
+        width: 120px;
+    }
+    .card img{
+        width: 110px;
+        height: 100px;
+    }
+
+    .card .contenido{
+        width: 100px;
+        height: 100px;
+        padding: 1px;
+        justify-content: center;
+    }
+
+    .card .contenido h3{
+        font-weight: 100;
+        font-size: 0.5em;
+    }
+
+    .card .contenido p{
+        font-weight: 100;
+        font-size: 0.5em;
+    }
+
+    .card .contenido a{
+        font-weight: 100;
+        font-size: 0.5em;
+        padding: 5px;
+    }
+}
+
+@media screen and (max-width: 800px) {
+    .titulo3 {
+        font-size: 3em;
+        justify-content: center;
+        font-weight: 10;
+    }
+
+    .txtnosotros{
+        font-size: 1em;
+    }
+}
+
+@media screen and (max-width: 800px) {
+    .compras {
+        display: grid;
+        grid-template-columns: 30vh 30vh 30vh;
+        gap: 0.8rem;
+    }
+}
+
+@media screen and (max-width: 800px) {
+    
+    .contactform {
+        width: 50vh;
+        align-items: flex-end;
+        justify-items: center;
+    }
+}
+
+@media screen and (max-width:800px){
+    .pie-pagina .grupo-1{
+        width: 90%;
+        grid-template-columns: repeat(1, 1fr);
+        grid-gap:30px;
+        padding: 35px 0px;
+    }
+}
+
+/*phone*/
+
+@media screen and (max-width:400px) {
+    .abrir-menu,
+    .cerrar-menu {
+        display: block;
+        border: 0;
+        font-size: 2rem;
+        background-color: transparent;
+        cursor: pointer;
+    }
+
+    /*portada*/
+    .contenedor-portada {
+        height: 70%;
+    }
+
+    .titulo-principal {
+        font-size: 1.5vh;
+    }
+    
+    .logo {
+        width: 50vh;
+        height: 50vh;
+    }    
+}
+
+@media screen and (max-width: 400px) {
+    .titulo2 {
+        font-size: 5vh;
+        font-weight: 25;
+    }
+
+    .contenedor-destacados {
+        display: grid;
+        grid-template-columns: 40vh;
+        grid-template-rows: repeat(4, 1fr);
+        gap: 1rem;
+        margin-left: 4rem;
+        margin-top: 1rem;
+    }
+
+    .producto-img {
+        width: 80%;
+        height: 60%;
+    }
+
+    .producto-detalles {
+        width: 80%;
+    }
+
+    @font-face {
+        font-family: Reglisse_Back;
+        src: url(../TIPOGRAFIA/Reglisse_Back.otf);
+    }
+
+    .titulo3 {
+        font-size: 3vh;
+        color: bisque;
+        text-shadow: 0px 3px 2px rgba(255, 119, 0);
+        font-family: Reglisse_Back;
+    }
+
+    .compras {
+        display: grid;
+        grid-template-columns: 40vh;
+        grid-template-rows: repeat(4, 1fr);
+        gap: 1rem;
+    }
+
+    .contacto {
+        margin-top: -40vh;
+    }
+}
